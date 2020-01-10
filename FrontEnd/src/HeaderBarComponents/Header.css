@@ -1,0 +1,130 @@
+﻿/*
+.body {
+    margin: 0px; 
+}
+*/
+
+.Header {
+    margin: 0px; 
+    border: 0px; 
+    padding: 0px; 
+    display: inline-flex;
+    width: 100%;
+    height: 10%; 
+    background-color: cornflowerblue; 
+}
+
+.Logo {
+    margin: 0;
+    border: none;
+    padding: 0px;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    width: 7%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.Title {
+    margin: inherit;
+    border: inherit;
+    text-align: center;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    width: 100%; 
+    height: 40%; 
+}
+
+.Logo_Image {
+    margin: 0;
+    border: none;
+    padding: 0px;
+    width: 60%;
+    height: 60%;
+}
+
+.Time {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    width: 35%;
+    height: 100%; 
+    background-color: burlywood;
+}
+
+.DayDateYear {
+    margin: inherit;
+    border: inherit;
+    padding: inherit;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.HourMinSec {
+    margin: inherit;
+    border: inherit;
+    padding: inherit;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.Reminder {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 45%;
+    height: 100%;
+    background-color: brown;
+}
+
+.slide_show {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.actualSlides {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: inline;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    height: 100%;
+}
+
+.slide_show_button_div {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 5%;
+}
+
+.slide_show_button {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    background-color: darkkhaki;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    width: 100%;
+    height: 100%;
+}
+
+.Account {
+    margin: 0px;
+    border: 0px; 
+    padding: 0px; 
+    display: inline-block;
+    background-color: cadetblue; 
+    width: 13%; 
+}
+
