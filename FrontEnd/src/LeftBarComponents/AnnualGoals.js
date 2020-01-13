@@ -2,10 +2,51 @@
 
 export default class AnnualGoals extends React.Component {
 
-    render() {
+    constructor()
+    {
+        super();
+        this.state = {
+            "collapsed": true
+        }
+    }
+
+    buildList()
+    {
+        const ls_detail = this.props.goals_list.map( goal => (<h4> {goal.id + ". " + goal.title} </h4>));
+
+        const appearingdisplay = {
+            display: "block", 
+            width: "100%", 
+            height: "100%" 
+        }
+
+        const dissapearingdisplay = {
+            display: "none",
+            width: "100%", 
+            height: "100%"
+        }
+
+        return (
+            <ul style={this.state.collapsed ? dissapearingdisplay : appearingdisplay}>
+                {ls_detail}
+            </ul>
+        );
+    }
+
+    toggleCollapsed()
+    {
+        if (this.state.collapsed) 
+            this.setState(() => { return { "collapsed": false } });
+        else 
+            this.setState(() => { return { "collapsed": true } });
+    }
+
+    render() {  
+
         return (
             <div className="Annual_Goals">
-                <h1>Annual Goals</h1>
+                <h2 className='collapsible' onClick={() => this.toggleCollapsed()}>Annual Goals</h2>
+                {this.buildList()}
             </div>
         )
     }

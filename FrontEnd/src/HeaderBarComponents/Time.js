@@ -80,10 +80,11 @@ export default class Time extends Component {
         return initial.toString().replace(/,/g, "").toUpperCase(); 
     }
 
-    
+    /****
+     * The time has just mounted, so wait for one second before setting the new time and display to the screen
+     */
     componentDidMount() {
         this.interval = setInterval(() => {return this.setState({ "time": Date.now() }); }, 1000);
-
     }
 
     componentWillUnmount() {
